@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      About Us
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width =device-width, initial scale =1">
+  </head>
+  <body>
+    <section id="showcase">
+      <img src="images/logo.png" class="logo-img">
+      <video src="videos/journey.mp4" muted loop autoplay></video>
+      <div class="overlay-vid"></div>
+      <div class="text-conl">
+        <h2>
+          About Us
+        </h2>
+        <h3>
+          Group 14
+        </h3>
+        <p class="triongle">
+          <b>Triongle</b> From c-Passion-10-1.
+        </p>
+        <div class="banner-conl">
+          <a href="https://chuckie-nt.github.io/superidol/"><span></span>Home</a>
+          <a href="https://chuckie-nt.github.io/superidol105/"><span></span>Our Journey</a>
+        </div>
+      </div>
+    </section>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#feature">STREAMING</a></li>
+          <li><a href="#service">VIEWERS</a></li>
+          <li><a href="#reason">REASON</a></li>
+          <li><a href="#showcase">CONCLUSION</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menuBtn">
+      <img src="images/menu.png" id="menu">
+    </div>
+    
+    <!--GROUP 14-->
+    
+    <section id="about">
+      <div class="title-text">
+        <p>
+          GROUP 14
+        </p>
+        <h1>
+          MEMBERS
+        </h1>
+      </div>
+      <div class="reason-row">
+        <div class="reason-col">
+          <div class="user">
+            <img src="images/pfp.jpg">
+            <div class="user-info">
+              <h4>
+                FACILITATOR<i class="fa fa-comment"></i>
+              </h4>
+              <small>
+                [AP-STUDENT] Elijah Rasci
+              </small>
+            </div>
+          </div>
+          <p>
+            As a facilitator and a leader, I was able to assign roles to my group members and use our skills to efficiently make our website, by also asking for suggestions from my members I was able to improve our website.
+          </p>
+        </div>
+        <div class="reason-col">
+          <div class="user">
+            <img src="images/pfp-2.jpg">
+            <div class="user-info">
+              <h4>
+                SPOKEPERSON<i class="fa fa-comment"></i>
+              </h4>
+              <small>
+                [AP-STUDENT] Denise Nicole Cruz
+              </small>
+            </div>
+          </div>
+          <p>
+            As a spokesperson I am able to  represent our team in discussing and delivering information about what our scribe gathered about how streaming benefits us in our daily lives. It is how people communicate through the use of social media and live streaming platforms with the use of different devices all over the world. It will be a conveniet help for both the audience and the streamer.
+          </p>
+        </div>
+        <div class="reason-col">
+          <div class="user">
+            <img src="images/pfp-3.jpg">
+            <div class="user-info">
+              <h4>
+                SCRIBE<i class="fa fa-comment"></i>
+              </h4>
+              <small>
+                [AP-STUDENT] Lyan Ryzza Ampatin
+              </small>
+            </div>
+          </div>
+          <p>
+            As a scribe I am able to gather information about how streaming works. It helps us in the technology of transimitting audio and video files in a continuous flow over a wired or wireless internet connection. There are a lot of streaming contents such as Podcasts, webcasts, movies, music and Tv shows. Spotify is one of the most used streaming service where you can play music for free. Therefore, streaming is really important in reaching new audiences, delivering engaging contents and providing endless opportunities for businesses.
+          </p>
+        </div>
+        </div>
+    </section>
+    
+    <!--FOOTER-->
+    
+    <section id="about-us">
+      <img src="images/logo.png" class="footer-img">
+      <div class="title-text">
+        <p>
+          FOOTER
+        </p>
+        <h1>
+          Group 14
+        </h1>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>
+            SCRIBE
+          </h1>
+          <p><i class="fa fa-pencil-square-o"></i>
+            Lyan Ryzza
+          </p>
+        </div>
+        <div class="footer-right">
+          <h1>
+            Spokeperson
+          </h1>
+          <p>
+            Nicole Cruz
+          <i class="fa fa-comments"></i></p>
+        </div>
+      </div>
+      <div class="leader">
+        <h1>
+          Facilitator
+        </h1>
+        <p><i class="fa fa-users"></i>
+          Elijah Rasci
+        <i class="fa fa-users"></i></p>
+      </div>
+    </section>
+    
+    <script>
+      var menuBtn = document.getElementById("menuBtn")
+      var sideNav = document.getElementById("sideNav")
+      var menu = document.getElementById("menu")
+      
+      sideNav.style.right = "-250px";
+      
+      menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+          sideNav.style.right = "0";
+          menu.src = "images/close.png";
+        }
+        else{
+          sideNav.style.right = "-250px";
+          menu.src = "images/menu.png";
+        }
+      }
+      
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true
+      });
+    </script>
+    
+  </body>
+</html>
